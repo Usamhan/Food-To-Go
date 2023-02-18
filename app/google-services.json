@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1081174361086",
+    "project_id": "food-to-go-1d187",
+    "storage_bucket": "food-to-go-1d187.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1081174361086:android:c9cf2837629b246264f6af",
+        "android_client_info": {
+          "package_name": "com.samhan.foodtogov10"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1081174361086-q2k54hpns9bemqdm8lb5p3lt62oau3b2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaQF85HyetTLTm3sE5IaTA1yYrQD6nzv4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1081174361086-q2k54hpns9bemqdm8lb5p3lt62oau3b2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
