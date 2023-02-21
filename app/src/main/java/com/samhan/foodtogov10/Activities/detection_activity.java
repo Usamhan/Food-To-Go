@@ -1,4 +1,4 @@
-package com.samhan.foodtogov10;
+package com.samhan.foodtogov10.Activities;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,6 +15,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.samhan.foodtogov10.R;
 import com.samhan.foodtogov10.ml.Model;
 
 import org.tensorflow.lite.DataType;

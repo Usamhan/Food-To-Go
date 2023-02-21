@@ -1,10 +1,13 @@
-package com.samhan.foodtogov10;
+package com.samhan.foodtogov10.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import com.samhan.foodtogov10.Activities.login_activity;
+import com.samhan.foodtogov10.R;
 
 public class splashScreen extends AppCompatActivity {
 
@@ -16,7 +19,7 @@ public class splashScreen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent=new Intent(getApplicationContext(),login_activity.class);
+                Intent intent=new Intent(getApplicationContext(), login_activity.class);
                 startActivity(intent);
                 finish();
             }

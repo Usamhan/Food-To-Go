@@ -1,4 +1,4 @@
-package com.samhan.foodtogov10;
+package com.samhan.foodtogov10.Activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,6 +15,7 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.samhan.foodtogov10.R;
 
 public class login_activity extends AppCompatActivity {
     EditText edtTxt_login_mail,edtTxt_login_pass;
@@ -34,16 +35,16 @@ public class login_activity extends AppCompatActivity {
 
         firebaseAuth=FirebaseAuth.getInstance();
 
-//        firebaseAuth.addAuthStateListener(new FirebaseAuth.AuthStateListener() {
-//            @Override
-//            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-//                if(firebaseAuth.getCurrentUser()!=null)
-//                {
-//                    Intent intent=new Intent(getApplicationContext(),MainActivity.class);
-//                    startActivity(intent);
-//                }
-//            }
-//        });
+        firebaseAuth.addAuthStateListener(new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+                if(firebaseAuth.getCurrentUser()!=null)
+                {
+                    Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+                    startActivity(intent);
+                }
+            }
+        });
 
         btn_LogIn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,7 +57,7 @@ public class login_activity extends AppCompatActivity {
                     firebaseAuth.signInWithEmailAndPassword(mail,password).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                         @Override
                         public void onSuccess(AuthResult authResult) {
-                            startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                            startActivity(new Intent(getApplicationContext(), MainActivity.class));
                         }
                     }).addOnFailureListener(new OnFailureListener() {
                         @Override
@@ -75,7 +76,7 @@ public class login_activity extends AppCompatActivity {
         txt_gotosign.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent Sintent=new Intent(login_activity.this,signup_activity.class);
+                Intent Sintent=new Intent(login_activity.this, signup_activity.class);
                 startActivity(Sintent);
             }
         });

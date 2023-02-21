@@ -4,24 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".login_activity"
+    tools:context=".Activities.login_activity"
     android:background="#f1faee"
     android:paddingLeft="10dp"
     android:paddingRight="10dp">
 
     <ImageView
-        android:id="@+id/img_welcome"
+        android:id="@+id/img_UserImg"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_centerHorizontal="true"
         android:src="@drawable/welcome"/>
+<!--        android:background="@drawable/circle_bg"/>-->
 
 
     <EditText
         android:id="@+id/edtTxt_signup_mail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/img_welcome"
+        android:layout_below="@+id/img_UserImg"
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="5dp"
@@ -60,6 +61,19 @@
         android:textColorHint="@color/black"
         android:textColor="@color/black"/>
 
+    <EditText
+        android:id="@+id/edtTxt_confirmPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtTxt_signup_pass"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/edt_text_bg"
+        android:hint="confirm password"
+        android:padding="15dp"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"/>
+
     <Button
         android:id="@+id/btn_SignUp"
         android:layout_width="wrap_content"
@@ -69,7 +83,7 @@
         android:textColor="@color/black"
         android:backgroundTint="@color/white"
         android:layout_marginTop="10dp"
-        android:layout_below="@id/edtTxt_signup_pass"
+        android:layout_below="@id/edtTxt_confirmPass"
         android:layout_centerHorizontal="true"
         />
 
