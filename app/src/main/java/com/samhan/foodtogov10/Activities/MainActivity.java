@@ -29,5 +29,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btn_toBlog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(), nav_drawer_activity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }
