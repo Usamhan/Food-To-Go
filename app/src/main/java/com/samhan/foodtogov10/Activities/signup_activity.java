@@ -35,6 +35,7 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.samhan.foodtogov10.R;
 
+
 public class signup_activity extends AppCompatActivity {
 
     static  int PreqCode=1;
@@ -49,7 +50,7 @@ public class signup_activity extends AppCompatActivity {
 
 
 
-    @SuppressLint("MissingInflatedId")
+//    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -88,7 +89,7 @@ public class signup_activity extends AppCompatActivity {
                 String mail=edtTxt_signup_mail.getText().toString();
                 String password=edtTxt_signup_pass.getText().toString();
                 String confirmPass=edtTxt_confirmPass.getText().toString();
-                String username=edtTxt_signup_pass.getText().toString();
+                String username=edtTxt_signup_username.getText().toString();
 
                 if(!mail.equals("") && !password.equals("") && !username.equals("") && password.equals(confirmPass))
                 {

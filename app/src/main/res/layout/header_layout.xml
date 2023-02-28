@@ -8,24 +8,27 @@
     android:orientation="vertical">
     
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
         android:src="@mipmap/ic_launcher"
         android:id="@+id/header_img"
-        android:contentDescription="Header image"/>
+        android:contentDescription="Header image"
+        />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="WsCube tech"
         android:textSize="24sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:id="@+id/header_username"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="abc@gmail.com"
         android:textSize="14sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:id="@+id/header_user_mail"/>
 
 
 </LinearLayout>
