@@ -59,7 +59,7 @@ public class nav_drawer_activity extends AppCompatActivity {
 
         updateNavHeader();
 
-//        loadFragment(new AFragment());
+        loadFragment(new HomeFragment());
 
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override

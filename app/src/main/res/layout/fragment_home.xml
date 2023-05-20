@@ -6,11 +6,13 @@
     tools:context=".Fragments.HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    
+
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
-
+        android:id="@+id/postRecyclerView"/>
+    
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btn_addPost"
         android:layout_width="50dp"

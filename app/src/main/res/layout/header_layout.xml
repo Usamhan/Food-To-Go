@@ -2,17 +2,20 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="220dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#7403A9F4"
     android:padding="14dp"
     android:gravity="bottom"
     android:orientation="vertical">
     
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:src="@mipmap/ic_launcher"
         android:id="@+id/header_img"
         android:contentDescription="Header image"
+        android:adjustViewBounds="true"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
         />
 
     <TextView
