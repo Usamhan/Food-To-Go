@@ -46,7 +46,7 @@ import java.util.Collections;
 import java.util.List;
 
 
-public class HomeFragment extends Fragment {
+public class HomeFragment extends Fragment{
 
 
 
@@ -304,6 +304,7 @@ public class HomeFragment extends Fragment {
             }
         });
     }
+
 
 
 }
