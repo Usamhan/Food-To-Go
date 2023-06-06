@@ -50,7 +50,7 @@ public class signup_activity extends AppCompatActivity {
 
 
 
-//    @SuppressLint("MissingInflatedId")
+    //    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -169,14 +169,14 @@ public class signup_activity extends AppCompatActivity {
 
     private void checkAndRequestForPermission() {
         if(ContextCompat.checkSelfPermission(signup_activity.this, Manifest.permission.READ_EXTERNAL_STORAGE)
-        != PackageManager.PERMISSION_GRANTED){
+                != PackageManager.PERMISSION_GRANTED){
             if(ActivityCompat.shouldShowRequestPermissionRationale(signup_activity.this,Manifest.permission.READ_EXTERNAL_STORAGE)){
                 Toast.makeText(this, "permission required", Toast.LENGTH_SHORT).show();
             }
             else {
                 ActivityCompat.requestPermissions(signup_activity.this,
-                                                  new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
-                                                  PreqCode);
+                        new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
+                        PreqCode);
             }
 
         }
